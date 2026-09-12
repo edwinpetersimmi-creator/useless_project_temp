@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kattadi Beach TMT Counter GO</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            text-align: center;
+            background: linear-gradient(#70cfff, #b8f28b);
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 20px;
+            background: rgba(0,0,0,0.25);
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .map {
+            height: 350px;
+            margin: 20px;
+            border-radius: 25px;
+            background:
+                linear-gradient(45deg, #78c850 25%, transparent 25%),
+                linear-gradient(-45deg, #78c850 25%, transparent 25%),
+                #98d8e8;
+            background-size: 80px 80px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px #555;
+        }
+
+        .beach {
+            position: absolute;
+            top: 130px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 70px;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateX(-50%) translateY(0); }
+            to { transform: translateX(-50%) translateY(-15px); }
+        }
+
+        .scan {
+            margin-top: 20px;
+            padding: 12px;
+            width: 70%;
+            font-size: 18px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 15px 35px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            background: #ffcb05;
+            color: #333;
+            box-shadow: 0 5px 0 #c99d00;
+            cursor: pointer;
+        }
+
+        button:active {
+            box-shadow: none;
+            transform: translateY(5px);
+        }
+
+        #result {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            background: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        #xp {
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🏖️ KATTADI TMT SAND COUNTER</h1>
+
+    <div class="map">
+        <div class="beach">🏖️</div>
+    </div>
+
+    <p id="xp">⭐ BEACH SCANNER READY</p>
+
+    <input
+        class="scan"
+        id="beachName"
+        placeholder="Enter beach name"
+    >
+
+    <br>
+
+    <button onclick="count()">🔍 SCAN BEACH</button>
+
+    <p id="result">Find a beach and scan it!</p>
+
+
+    <script>
+
+        let beaches = {};
+
+        function count() {
+
+            let name = document.getElementById("beachName").value;
+
+            if (name == "") {
+                document.getElementById("result").innerHTML =
+                    "⚠️ Enter a beach name first!";
+                return;
+            }
+
+            if (beaches[name] == null) {
+                beaches[name] =
+                    Math.floor(Math.random() * 1000000000);
+            }
+
+            document.getElementById("xp").innerHTML =
+                "⭐ SCAN COMPLETE! +100 XP";
+
+            document.getElementById("result").innerHTML =
+                "🏖️ " + name +
+                "<br><br>🌾 Checked by Professionals<br>" +
+                beaches[name].toLocaleString();
+        }
+
+    </script>
+
+</body>
+</html>
