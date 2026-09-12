@@ -1,69 +1,89 @@
-🏖️ Beach Sand Counter
+Ah, got it 😄 — your project is **Sand Counter**, not Divider Simulator. Here’s the corrected README with **Kattadi TMT Project**, **Amar & Edwin**, and **SNGCE**.
 
-A Useless Project by SNGCE 😂
+# Beach Sand Counter 🎯
 
-Welcome to Beach Sand Counter — a completely useless but fun website that gives you an estimated number of sand grains for any beach you enter! 🏖️🌊
+## Basic Details
 
-🎯 About the Project
+### Team Name: Kattadi TMT Project
 
-Ever wondered:
+### Team Members
 
-«"How many grains of sand are there on this beach?"»
+* Team Lead: Amar - SNGCE
+* Member 2: Edwin - SNGCE
 
-Probably not. 😭
+### Project Description
 
-But we made a website to answer it anyway!
+**Beach Sand Counter** is a simple and fun website that estimates the number of sand grains at a selected beach.
 
-Enter the name of a beach and click Count. The website generates a number representing the estimated sand grains.
+The user enters a beach name and clicks the **Count** button to generate an estimated sand grain count for that beach.
 
-🛠️ Technologies Used
+### The Problem (that doesn't exist)
 
-- HTML
-- CSS
-- JavaScript
-- Notepad / VS Code
-- A questionable amount of creativity 🤣
+Have you ever visited a beach and wondered:
 
-👨‍💻 Team
+**"Exactly how many grains of sand are there?"**
 
-College: SNGCE – Sree Narayana Gurukulam College of Engineering
+Nobody actually needs to know.
 
-Members:
+But we decided that this extremely important problem deserved a solution.
 
-- 👨‍💻 Amar
-- 👨‍💻 Edwin
+### The Solution (that nobody asked for)
 
-✨ Features
+We created **Beach Sand Counter**.
 
-- 🏖️ Enter any beach name
-- 🔢 Generate a sand grain count
-- 🔁 The same beach gives the same result
-- 💻 Simple and easy-to-use interface
-- 😂 Completely useless, but entertaining
+Simply enter the name of a beach and click **Count**. The website generates a unique estimated number of sand grains for that beach.
 
-🚀 How to Run
+If the same beach name is entered again, the website gives the same result.
 
-1. Download or copy the project files.
-2. Open the ".html" file.
-3. Open it in any web browser.
-4. Enter a beach name.
-5. Click Count.
-6. Discover how many imaginary grains of sand your beach has! 🏖️
+Completely unnecessary. Completely useless. Completely awesome. 🏖️
 
-🤔 Why?
+## Technical Details
 
-Because not every project needs to solve a serious problem.
+### Technologies/Components Used
 
-Sometimes...
+### For Software:
 
-We just count sand. 🗿🏖️
+* **HTML** – Website structure
+* **CSS** – Website design and styling
+* **JavaScript** – Sand-count calculation and interaction
+* **Tools:** Notepad / Visual Studio Code
+* **Browser:** Google Chrome
 
----
+### For Hardware:
 
-🏆 Project Type
+No hardware components were required.
 
-Useless Project / Fun Web Project
+## Implementation
 
-🏫 Institution
+### For Software:
 
-SNGCE
+The project is implemented as a simple HTML webpage using CSS and JavaScript.
+
+1. The user enters a beach name.
+2. The user clicks the **Count** button.
+3. JavaScript processes the beach name.
+4. A calculated sand-grain estimate is generated.
+5. The result is displayed on the webpage.
+6. Entering the same beach name produces the same result.
+
+# Installation
+
+No installation is required.
+
+```text
+1. Save the code as index.html
+2. Open index.html
+3. Run it using Google Chrome
+```
+
+# Run
+
+Open `index.html` in any modern web browser.
+
+```text
+Right Click → Open With → Google Chrome
+```
+## Team Contributions
+
+* **Amar:** Project idea, HTML/CSS development, JavaScript functionality, testing and presentation.
+* **Edwin:** Project design, testing, documentation and presentation.
